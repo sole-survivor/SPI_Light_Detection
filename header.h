@@ -25,3 +25,8 @@ void adc_uart_tx_int(s32);
 void spi0_init(void);
 unsigned char spi0(unsigned char);
 unsigned short int mcp3204_adc_read(unsigned int);
+
+void config_vic(void);
+__irq void SW1_INT(void);
+__irq void SW2_INT(void);
+
